@@ -1,1 +1,10 @@
-.Tchat {}
+.Tchat {
+    height: 600px;
+    border: 1px solid lightgrey;
+}
+.error {
+    text-align: center;
+    font-size: xx-large;
+    color: tomato;
+    font-weight: 900;
+}

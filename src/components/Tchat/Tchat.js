@@ -5,11 +5,15 @@ import TchatReader from '../TchatReader/TchatReader';
 import TchatSender from '../TchatSender/TchatSender';
 
 const Tchat = (props) => {
- return   (<div className={styles.Tchat} data-testid="Tchat">
-      tchat nickname --&gt;{props.nickname}
+
+  let nick = props.nickname;
+  return props.nickname.length > 0 ? 
+    (<div className={styles.Tchat} data-testid="Tchat">
+      tchat nickname --&gt;{nick}
       <TchatReader />
       <TchatSender />
-    </div>);
+    </div>) 
+    :(<div className={styles.error}>Un nick name est requis</div>);
 }
 
 

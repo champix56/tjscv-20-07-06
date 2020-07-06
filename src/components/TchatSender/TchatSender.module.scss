@@ -1,1 +1,14 @@
-.TchatSender {}
+.TchatSender {
+    height: 32px;
+}
+.TchatSender input[type=text]{
+    height: 40px;
+    width: calc(100% - 280px);
+    outline: none;
+    border:none;
+    font-size: 38px;
+}
+.TchatSender Button{
+    position: absolute;
+    right: 0;
+}

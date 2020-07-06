@@ -9,9 +9,9 @@ const Tchat = (props) => {
   let nick = props.nickname;
   return props.nickname.length > 0 ? 
     (<div className={styles.Tchat} data-testid="Tchat">
-      tchat nickname --&gt;{nick}
-      <TchatReader />
-      <TchatSender />
+      {/* tchat nickname --&gt;{nick} */}
+      <TchatReader nickname={props.nickname} />
+      <TchatSender nickname={props.nickname} submitMessage={message=>{console.log(message)}} />
     </div>) 
     :(<div className={styles.error}>Un nick name est requis</div>);
 }

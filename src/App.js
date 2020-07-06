@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Button from './components/Button/Button';
 
@@ -10,8 +9,13 @@ function App() {
   }
   return (
     <div className="App">
-        <Button text="Mon button" onClick={buttonClick}/>
-        {/* <Button text="mon btn2"/> */}
+        {/* <Button onClick={buttonClick} bgColor="tomato">
+         <div> 
+            I <img src="/img/logo.svg" alt="logo react"/> React
+          </div>
+        </Button> */}
+
+        
     </div>
   );
 }

@@ -1,1 +1,23 @@
-.TchatReader {}
+.TchatReader {
+  padding-left: 10px;
+  padding-right: 10px;
+  height: calc(100% - 80px);
+  overflow-y: scroll;
+}
+.TchatReaderMessage {
+  color: white;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.TchatReaderMessage > * {
+  padding: 10px;
+  border-radius: 7px;
+  width:fit-content;
+  display: inline-block;
+}
+.TchatReaderMyMessageContainer {
+  background-color: tomato;
+}
+.TchatReaderMessageContainer {
+  background-color: lightseagreen;
+}

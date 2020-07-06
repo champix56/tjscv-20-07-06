@@ -1,15 +1,13 @@
 import React from 'react';
 import './App.css';
-import Button from './components/Button/Button';
-import NicknameForm from './components/NicknameForm/NicknameForm';
+import Button from '../UIComponents/Button/Button';
+import NicknameForm from '../FeatureComponents/NicknameForm/NicknameForm';
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = { nickname: "" };
   }
-  buttonClick(evt) {
-    console.log(evt)
-  }
+  buttonClick(evt) {console.log(evt)}
   render() {
     return (
       <div className="App">
@@ -19,7 +17,7 @@ class App extends React.Component {
       <br/>
         <Button onClick={this.buttonClick} bgColor="tomato">
           <div>
-            I <img src="/img/logo.svg" alt="logo react" /> React
+            Env<img src="/img/logo.svg" alt="logo react" />yer
           </div>
         </Button>
       </div>

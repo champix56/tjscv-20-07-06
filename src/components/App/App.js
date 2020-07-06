@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Button from '../UIComponents/Button/Button';
 import NicknameForm from '../FeatureComponents/NicknameForm/NicknameForm';
+import Tchat from '../Tchat/Tchat';
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -15,6 +16,7 @@ class App extends React.Component {
         <hr />
       Bonjour --&gt;{this.state.nickname}&lt;--
       <br/>
+      <Tchat nickname={this.state.nickname}/>
         <Button onClick={this.buttonClick} bgColor="tomato">
           <div>
             Env<img src="/img/logo.svg" alt="logo react" />yer

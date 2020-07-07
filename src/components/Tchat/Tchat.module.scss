@@ -1,5 +1,5 @@
 .Tchat {
-    height: 600px;
+    height: calc(100vh - 150px);
     border: 1px solid lightgrey;
 }
 .error {
@@ -7,4 +7,21 @@
     font-size: xx-large;
     color: tomato;
     font-weight: 900;
+    width: 100%;
+    position: fixed;
+    top: 100px;
+    background-color: lightgrey;
+    height: 100%;
+    overflow-y: scroll;
+}
+.errorContent {
+    position: fixed;
+    top: 150px;
+    left: 25%;
+    right: 25%;
+    padding: 50px 15px;
+    
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 8px 8px 15px black;
 }

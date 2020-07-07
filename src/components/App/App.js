@@ -13,15 +13,14 @@ class App extends React.Component {
     return (
       <div className="App">
         <NicknameForm nick={this.state.nickname} validateNick={obj=>{this.setState({nickname:obj.newNick})}}/>
-        <hr />
-      Bonjour --&gt;{this.state.nickname}&lt;--
+      {/* Bonjour --&gt;{this.state.nickname}&lt;-- */}
       <br/>
       <Tchat nickname={this.state.nickname}/>
-        <Button onClick={this.buttonClick} bgColor="tomato">
+        {/* <Button onClick={this.buttonClick} bgColor="tomato">
           <div>
             Env<img src="/img/logo.svg" alt="logo react" />yer
           </div>
-        </Button>
+        </Button> */}
       </div>
     );
   }

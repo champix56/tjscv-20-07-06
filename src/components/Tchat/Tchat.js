@@ -13,7 +13,7 @@ const Tchat = (props) => {
       <TchatReader nickname={props.nickname} />
       <TchatSender nickname={props.nickname} submitMessage={message=>{console.log(message)}} />
     </div>) 
-    :(<div className={styles.error}>Un nick name est requis</div>);
+    :(<div className={styles.error}><div className={styles.errorContent}>Un nick name est requis</div></div>);
 }
 
 

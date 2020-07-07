@@ -14,7 +14,7 @@ class NicknameForm extends React.Component {
     console.log('event form', evt)
   }
   emptyInput = () => {
-    this.setState({ nickname: "Charly" });
+    this.setState({ nickname: "Anonymous" });
   }
   resetForm = (evt) => {
     evt.preventDefault();
@@ -31,8 +31,8 @@ class NicknameForm extends React.Component {
           }} value={this.state.nickname} />
         <Button onClick={this.submitForm} bgColor="green">Valider</Button>
         <Button onClick={this.resetForm} bgColor="grey">Reset</Button>
-        <br />
-        Votre pseudo : {this.state.nickname}
+        {/* <br />
+        Votre pseudo : {this.state.nickname} */}
       </form>
     );
   }

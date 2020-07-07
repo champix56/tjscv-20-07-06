@@ -1,6 +1,6 @@
 .Tchat {
     height: calc(100vh - 150px);
-    border: 1px solid lightgrey;
+    border-top: 1px solid lightgrey;
 }
 .error {
     text-align: center;
@@ -8,19 +8,26 @@
     color: tomato;
     font-weight: 900;
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 100px;
     background-color: lightgrey;
     height: 100%;
-    overflow-y: scroll;
 }
-.errorContent {
-    position: fixed;
+.errorContent::before{
+    content: 'NICKNAME - ERROR :';
+    display: block;
+    margin-bottom: 20px;
+    color: black;
+    text-decoration: underline;
+    font-weight: 600;
+    text-align: left;
+}
+    .errorContent {
+    position: absolute;
     top: 150px;
     left: 25%;
     right: 25%;
-    padding: 50px 15px;
-    
+    padding: 20px 50px 15px;
     border-radius: 5px;
     background-color: white;
     box-shadow: 8px 8px 15px black;

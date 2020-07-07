@@ -11,9 +11,12 @@ const TchatSender = (props) => {
     setMessage("");
   }
   return (
+    <>
     <div className={styles.TchatSender} data-testid="TchatSender">
       <form onSubmit={e => { e.preventDefault(); submit(e)}}>
-        <input placeholder="saisir message ici..." type="text" value={messageOutbox} onChange={e => { setMessage(e.currentTarget.value) }} />
+        <input  placeholder="saisir message ici..." 
+                type="text" value={messageOutbox} 
+                onChange={e => { setMessage(e.currentTarget.value) }} />
         <Button onClick={e=>{submit(e);}}>
           <div>
             Env<img src="/img/logo.svg" alt="logo react" />yer
@@ -21,7 +24,8 @@ const TchatSender = (props) => {
         </Button>
       </form>
     </div>
-  )
+  <div style={{textAlign:'center', position:"fixed",bottom:"5px", left:0,right:0,fontSize:'20pt', fontStyle:'italic', borderTop:"1px solid rgba(135, 207, 235, 0.678)"}}>Be fair, be React</div>
+  </>)
 };
 
 TchatSender.propTypes = { 

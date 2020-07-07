@@ -1,13 +1,25 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 // import  './TchatReader.css';
 import './TchatReader.css'
-const TchatReader = (props) => (
+const TchatReader = (props) => {
+  let [messages,setMessages]=useState([{id:0, userId: "alex", message: "degemer mat breizh" },{id:1, userId: "jean-raoul", message: "hello Great brittain" }]);
+
+  useEffect(() => {
+   console.log(messages);
+   setMessages([...messages,{id:2,userId:'yannick', message:'te reste t\'il du chouchen?'}])
+  });
+
+  // const messages=[{id:0, userId: "alex", message: "degemer mat breizh" },{id:1, userId: "jean-raoul", message: "hello Great brittain" }]
+  return(
   <div className="TchatReader">
-    <TchatMessage message={{ userId: "alex", message: "Demat breizh" }} nickname={props.nickname} />
-    <TchatMessage message={{ userId: "jean-raoul", message: "hello Great brittain" }} nickname={props.nickname} />
+    {
+      messages.map((e,i)=>{
+        return  <TchatMessage message={e} nickname={props.nickname} key={`message-${i}`} />
+      })
+    }
   </div>
-);
+);}
 
 TchatReader.propTypes = {
   nickname: PropTypes.string,

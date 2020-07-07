@@ -1,5 +1,6 @@
 .TchatReader{
     height: calc(100vh - 230px);
+    overflow-y: scroll;
 }
 .TchatMessage{
     border-radius:5px ;

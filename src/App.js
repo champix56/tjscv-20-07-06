@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
-import Button from './components/Button/Button';
+// import Button from './components/UIComponents/Button/Button';
 import NicknameForm from './components/NicknameForm/NicknameForm';
+import Tchat from './components/FeatureComponents/Tchat/Tchat';
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -17,11 +18,12 @@ class App extends React.Component {
         <hr />
       Bonjour --&gt;{this.state.nickname}&lt;--
       <br/>
-        <Button onClick={this.buttonClick} bgColor="tomato">
+      <Tchat nickname={this.state.nickname}/>
+        {/* <Button onClick={this.buttonClick} bgColor="tomato">
           <div>
             I <img src="/img/logo.svg" alt="logo react" /> React
           </div>
-        </Button>
+        </Button> */}
       </div>
     );
   }

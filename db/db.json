@@ -1,0 +1,28 @@
+{
+    "messages": [
+        {
+            "id":0,
+            "userId": 0,
+            "message": "Demat breizh",
+            "heure":"20-07-07 11:29:00"
+        },
+        {
+            "id":1,
+            "userId": 1,
+            "message": "Hello Great brittain",
+            "heure":"20-07-07 11:29:01"
+        }
+    ],
+    "users":[
+        {
+            "id":0,
+            "nickname":"alex",
+            "img":"bob.jpg"
+        },
+        {
+            "id":1,
+            "nickname":"jean-raoul du cable",
+            "img":"jr.jpg"
+        }
+    ]
+}

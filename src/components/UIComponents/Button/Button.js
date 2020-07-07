@@ -24,7 +24,7 @@ const Button = (props) => {
     }
   }
   return (
-    <div className={styles.Button} data-testid="Button" onClick={onclick} style={{ border: `1px solid ${props.bgColor}` }}>
+    <div className={styles.Button} data-testid="Button" onClick={onclick} style={{...props.style, border: `1px solid ${props.bgColor}` }}>
       <div className={styles.container} style={{ backgroundColor: props.bgColor }}>
         {props.children}
       </div>
@@ -33,7 +33,8 @@ const Button = (props) => {
 };
 Button.propTypes = {
   onClick: PropTypes.func,
-  bgColor: PropTypes.string.isRequired
+  bgColor: PropTypes.string.isRequired,
+  style:PropTypes.func
 }
 Button.defaultProps = {
   bgColor: 'tomato',

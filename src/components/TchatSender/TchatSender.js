@@ -17,7 +17,7 @@ const TchatSender = (props) => {
         <input  placeholder="saisir message ici..." 
                 type="text" value={messageOutbox} 
                 onChange={e => { setMessage(e.currentTarget.value) }} />
-        <Button onClick={e=>{submit(e);}}>
+        <Button onClick={e=>{submit(e);}} style={{position: 'absolute',right: 0}}>
           <div>
             Env<img src="/img/logo.svg" alt="logo react" />yer
           </div>

@@ -29,8 +29,8 @@ class NicknameForm extends React.Component {
           onChange={(e) => {
             this.setState({ nickname: e.currentTarget.value });
           }} value={this.state.nickname} />
-        <Button onClick={this.submitForm} bgColor="green">Valider</Button>
-        <Button onClick={this.resetForm} bgColor="grey">Reset</Button>
+        <Button onClick={this.submitForm} bgColor="green" style={{fontSize:"10pt",padding:"5px"}}>Valider</Button>
+        <Button onClick={this.resetForm} bgColor="grey" style={{fontSize:"10pt",padding:"5px"}}>Reset</Button>
         {/* <br />
         Votre pseudo : {this.state.nickname} */}
       </form>

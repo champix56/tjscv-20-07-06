@@ -1,15 +1,18 @@
 .TchatSender {
     height: 32px;
+    text-align: left;
 }
-.TchatSender input[type=text]{
+.TchatSender > * {
+    vertical-align: middle;
+}
+.TchatSender>form>input[type=text]{
     height: 40px;
-    width: calc(100% - 280px);
+    margin-top: 25px;
     outline: none;
     border:none;
     border-bottom: rgba(255, 99, 71, 0.65);
     font-size: 38px;
-}
-.TchatSender Button{
-    position: absolute;
-    right: 0;
+    margin-left: 5px;
+    width: calc(100% - 150px);
+    color: rgb(109, 166, 189);
 }
